@@ -57,7 +57,8 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _isPlayerReady = false;
 
   final List<String> _ids = [
-    YoutubePlayer.convertUrlToId("https://www.youtube.com/watch?v=UUhavvMO2FQ").toString(),
+    YoutubePlayer.convertUrlToId("https://www.youtube.com/watch?v=qh16JlcjDnY")
+        .toString(),
   ];
 
   @override
@@ -120,8 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text(
               _controller.metadata.title,
               style: const TextStyle(
-                color: Colors.white,
-                fontSize: 18.0,
+                color: Colors.red,
+                fontSize: 25.0,
               ),
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
@@ -130,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
           IconButton(
             icon: const Icon(
               Icons.settings,
-              color: Colors.white,
+              color: Colors.red,
               size: 25.0,
             ),
             onPressed: () {
@@ -150,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
       builder: (context, player) => Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Pedro Pedro Pedro Pedro',
+            'Presidente Maynez',
             style: TextStyle(color: Colors.white),
           ),
         ),
